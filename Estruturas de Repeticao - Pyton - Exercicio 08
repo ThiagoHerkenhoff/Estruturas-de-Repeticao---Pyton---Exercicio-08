@@ -1,0 +1,18 @@
+# 8 - Escreva um programa que leia 10 números e escreva o menor valor lido e o maior lido.
+
+num_menor = float('inf') # inf - infinito positivo
+num_maior = float('-inf') # -inf - Infinito negativo
+contador = 0
+
+while contador < 10:
+    num = float(input('Informe um número: '))
+
+    if num < num_menor:
+        num_menor = num
+
+    if num > num_maior:
+        num_maior = num
+    contador = contador + 1
+
+print(f"O menor valor informado é: {num_menor}")
+print(f"O maior valor informado é: {num_maior}")
